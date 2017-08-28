@@ -20,14 +20,18 @@ public class FixDebugEight3 {
             if (plan == floorPlans[x]) {
                 fp = x;
             }
+            System.out.println(x);
+            System.out.println(plan);
+            System.out.println(floorPlans[x]);
+            System.out.println(fp);
         }
         if(fp == 99){
             JOptionPane.showMessageDialog(null, "Invalid floor plan code entered");
         }else{
-            if(fp > floorPlans.length - 1){
-                fp = fp - floorPlans.length;
+            if(fp > pricesInThousands.length - 1){
+                fp = fp - pricesInThousands.length;
             }
-            JOptionPane.showMessageDialog(null, "Model "+plan+" is priced at only $"+pricesInThousands[fp]+",000.");
+        JOptionPane.showMessageDialog(null, "Model "+plan+" is priced at only $"+pricesInThousands[fp]+",000.");
         }
 
     }
